@@ -1,3 +1,6 @@
+html{
+    scroll-behavior: smooth;
+}
 *{
     box-sizing: inherit;
     margin: 0;
@@ -45,8 +48,8 @@ body{
     padding: 10px;
     background: repeating-linear-gradient(90deg,purple,rgb(255, 30, 0),white);
     border-radius: 50%;
-    height: 30vh;
-    width: 30vh;
+    height: 60vh;
+    width: 60vh;
     overflow: visible;
     position: relative;
 }
@@ -59,13 +62,118 @@ main{
     width: 100%;
     background: linear-gradient(180deg,rgb(161, 26, 49), rgb(238, 214, 214));
     text-align: center;
+    padding: 0;
 }
 #welcome-setion,h1{
 color: #eee;
+font-size: 35px;
 
 }
 .header{
     padding: 20px;
     text-align: center;
     margin: 80px auto;
+
+}
+section h3{
+    margin: 10px;
+    font-size: 23px;
+    font-family: raleway;
+    color: rgb(95, 4, 24);
+}
+#about-me{
+    margin:20px;
+}
+#about-me,h3{
+    font-size: 18px;
+    font-family: 'Times New Roman', Times, serif;
+
+}
+#about-me a{
+    color:rgb(95, 4, 24);
+    padding: 0;
+}
+section,#projects{
+    margin: 0 auto;
+    padding: 3rem 2rem;
+    overflow: hidden;
+    /* background:pink; */
+
+   
+}
+.project-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    width: 70vw;
+    gap: 4rem;
+    margin: 0 auto;
+    margin-bottom: 6rem;
+    /* background-color: pink; */
+    max-width: 100%;
+}
+.project-grid img{
+    width:30vw;
+    padding: 0;
+
+}
+.project{
+background: pink;
+box-shadow: 1px 1px 2px rgba(49, 4, 15, 0.4);
+border-radius: 2px;
+padding: 1em;
+text-align: center;
+margin-top: 50px;
+color:black;
+}
+.project{
+    text-decoration: none;
+}
+.project:hover{
+    transform: scale(1.2);
+    transition: 0.5s ease-in-out;
+}
+footer{
+    background: linear-gradient(180deg, rgb(238, 214, 214),rgb(161, 26, 49));
+}
+#socials,h4{
+    font-size: 23px;
+    color: #d1114b;
+    text-align: center;
+
+}
+i{
+    padding: 4px;
+}
+
+@media (max-width:650px){
+    .img-div{
+        max-width: 100%;
+        margin: 180px 0 8px 50px;
+        width:50%;
+        height: 50%;
+}
+    .header{
+        margin: 0 auto;
+        position: absolute;
+        top: 0;
+        margin-top: 60px;
+        font-size: 16px;
+
+    }
+    #welcome-section{
+        margin: 0 auto;
+        padding: 0;
+    }
+    #navbar,a{
+        font-size: 18px;
+        flex-direction: column;
+        padding: 2px;
+        padding-right: 10px;
+
+    }
+    .project-grid{
+        grid-template-columns: 1fr;
+        margin: 0 auto;
+        }
 }
